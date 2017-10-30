@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sony.soundproject.MainActivity">
+
+    <RadioButton
+        android:id="@+id/RadioBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RadioButton"
+        android:onClick="onRadio"
+        android:layout_alignBottom="@+id/But"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp" />
+
+    <Button
+        android:id="@+id/But"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/Terms"
+        android:layout_centerHorizontal="true" />
+
+    <ToggleButton
+        android:id="@+id/ToggleBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        android:onClick="onToggle"
+        android:layout_below="@+id/But"
+        android:layout_toRightOf="@+id/But"
+        android:layout_toEndOf="@+id/But"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="14dp" />
+
+    <CheckBox
+        android:id="@+id/CheckBawx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        android:layout_below="@+id/Terms"
+        android:layout_alignRight="@+id/RadioBut"
+        android:layout_alignEnd="@+id/RadioBut" />
+
+    <TextView
+        android:id="@+id/Terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By checking the following checkbox you here-by agree to the terms and conditions"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_above="@+id/RadioBut"
+        android:layout_alignLeft="@+id/ToggleBut"
+        android:layout_alignStart="@+id/ToggleBut"
+        android:layout_marginBottom="27dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_below="@+id/textView6"
+        android:layout_alignRight="@+id/ToggleBut"
+        android:layout_alignEnd="@+id/ToggleBut"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp" />
+
+</RelativeLayout>
